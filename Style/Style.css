@@ -333,9 +333,13 @@ body {
 }
 
 .mapbg {
-    background-image: url(/Image/mappoto.jpg);
     width: 100%;
     height: 700px;
     background-size: cover;
     margin-top: 60px;
+}
+
+.mapbg img {
+    object-fit: cover;
+    width: 100%;
 }
