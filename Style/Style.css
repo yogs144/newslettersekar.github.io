@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px 50px;
+}
+
+.judul {
+    color: #3A2F7F;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.space-betwen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-evenly {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.menubar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menubar li {
+    list-style: none;
+    display: flex;
+}
+
+.menubar li img {
+    margin-right: 30px;
+}
+
+.menubar ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    align-items: center;
+    color: #3A2F7F;
+    font-weight: 600;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.menubar ul li a:hover {
+    color: #1e00ff;
+}
+
+.menubar ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.menubar ul li a::before {
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 50px;
+    width: 20%;
+    background: blue;
+    transform-origin: bottom;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+    border-radius: 2px;
+}
+
+
+/*------ hero-----*/
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+}
+
+.left-side .welcome {
+    font-size: 65px;
+    font-weight: 700;
+    color: #484FFD;
+}
+
+.left-side .nama {
+    font-size: 28px;
+    color: #3A2F7F;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.left-side .pengantar {
+    width: 400px;
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+.button {
+    padding: 20px 40px;
+    text-decoration: none;
+    background-color: #484FFD;
+    display: inline-flex;
+    margin-top: 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.button:hover img {
+    animation: iconjln 1s infinite;
+}
+
+.button span {
+    margin-left: 40px;
+}
+
+.right-side img {
+    width: 400px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: #3A2F7F;
+}
+
+
+/*animation*/
+
+@keyframes iconjln {
+    0%,
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    70% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.newsletter {
+    font-size: 25px;
+    color: #2C2076;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.newsleter-btn {
+    text-decoration: none;
+    background-color: #E5E6F1;
+    padding: 35px 45px;
+    width: 320px;
+    color: #2C2076;
+    margin: 20px 0;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-flex;
+    justify-content: space-evenly;
+    transition: .5s;
+}
+
+.newsleter-btn::before {
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 50px;
+    width: 20%;
+    background: blue;
+    transform-origin: bottom;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+    border-radius: 2px;
+}
+
+.newsleter-btn:hover img {
+    animation: iconjln 1s;
+}
+
+.newsleter-btn:hover {
+    background-color: #c0c1d3;
+    transform: scale(1.1);
+}
+
+.konten-section {
+    padding: 50px 0;
+}
+
+.newsleter-btn img {
+    margin-left: 20px;
+}
+
+.newsleter-btn span::before {
+    content: "";
+    margin-top: -13px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 10%;
+    position: absolute;
+}
+
+#tekuni-hobi h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #2C2076;
+}
+
+.isikonten {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.isikonten img {
+    width: 700px;
+}
+
+#berolahraga h2 {
+    text-align: right;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#memasak h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #2C2076;
+}
+
+#bercocok-tanam h2 {
+    text-align: right;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#foto h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #2C2076;
+}
+
+#membuat-konten h2 {
+    text-align: right;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+
+/*---contact page----*/
+
+.center {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container .PI {
+    color: #484FFD;
+    font-size: 60px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.skr {
+    width: 300px;
+    margin: 30px auto;
+}
+
+.sosial {
+    background-color: #E5E6F1;
+    padding: 20px 40px;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin: 40px auto;
+    border-radius: 40px;
+}
+
+.adressbar {
+    background-color: #484FFD;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    border-radius: 40px;
+    top: 95%;
+    left: 100px;
+    box-shadow: 0px 40px 50px rgb(0, 0, 0, .5);
+}
+
+.adressbar .map {
+    color: white;
+    width: 400px;
+}
+
+.adressbar .call {
+    color: white;
+    width: 400px;
+}
+
+.adressbar .mail {
+    color: white;
+    width: 400px;
+}
+
+.mapbg {
+    background-image: url(/Image/foto\ map.png);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    margin-top: 60px;
+}
